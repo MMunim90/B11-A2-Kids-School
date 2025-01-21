@@ -7,9 +7,9 @@
   font-style: normal;
 }
 
-* {
+/* * {
   background: rgb(247, 247, 247);
-}
+} */
 
 /* shared styles*/
 .display-flex {
@@ -121,12 +121,95 @@
 /*main section style start*/
 
 /*section 1 style start*/
+.section1 {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .standard-title {
-  padding: 60px 0px 80px 0px;
+  padding: 60px 0px 60px 0px;
   font-size: 2.8rem;
   font-weight: 700;
   text-align: center;
 }
+
+.cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 55px;
+}
+.card1 {
+  width: 367.8px;
+  height: 476.78px;
+  border: 0.94px solid rgb(255, 244, 220);
+  border-radius: 18.86px;
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background-image: linear-gradient(blue, white);
+  text-align: center;
+}
+.card2 {
+  width: 367.8px;
+  height: 476.78px;
+  border: 0.94px solid rgb(255, 244, 220);
+  border-radius: 18.86px;
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background-image: linear-gradient(yellow, white);
+  text-align: center;
+}
+.card3 {
+  width: 367.8px;
+  height: 476.78px;
+  border: 0.94px solid rgb(255, 244, 220);
+  border-radius: 18.86px;
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background-image: linear-gradient(violet, white);
+  text-align: center;
+}
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 33px;
+}
+
+.card-description {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 33px;
+}
+
+.card-img {
+  width: 137.44px;
+  height: 124.69px;
+  padding: 58px 122px 38px 122px;
+}
+
+/* arrow buttons style*/
+.arrow-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 80px;
+  align-items: center;
+  justify-content: center;
+}
+
+.arow-btns {
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background: rgb(254, 163, 1);
+  text-align: center;
+}
+.arw-btn {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: white;
+}
+
+/*section 2 style start*/
+
 
 /* responsive media query*/
 @media screen and (max-width: 576px) {
@@ -161,11 +244,36 @@
     align-items: center;
     justify-content: center;
   }
+  .banner-title {
+    font-size: 2rem;
+  }
+  .banner-description {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
 
   .banner-title,
   .banner-description,
   .btn2 {
     margin: 0 auto;
     margin-top: 5px;
+  }
+
+  /*main section responsive style start*/
+
+  /*section 1 responsive style start*/
+  .standard-title {
+    font-size: 1.7rem;
+  }
+  .cards-container {
+    flex-direction: column;
+  }
+  .card1,
+  .card2,
+  .card3 {
+    margin-bottom: 12px;
+  }
+  .arrow-buttons {
+    display: none;
   }
 }
