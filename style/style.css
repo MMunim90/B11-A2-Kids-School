@@ -77,6 +77,28 @@
   font-size: 1rem;
   font-weight: 500;
 }
+#other-card-btn {
+  width: 179.44px;
+  height: 38.35px;
+  position: absolute;
+  margin-left: 35px;
+  margin-top: 160px;
+  border-radius: 48px;
+  background: rgb(149, 178, 38);
+  font-size: 1rem;
+  font-weight: 500;
+}
+#other-card-btn2 {
+    width: 179.44px;
+    height: 38.35px;
+    position: absolute;
+    margin-left: 35px;
+    margin-top: 160px;
+    border-radius: 48px;
+    background: rgb(93, 88, 240);;
+    font-size: 1rem;
+    font-weight: 500;
+  }
 /* header styles */
 
 /*navbar styles*/
@@ -291,8 +313,9 @@
 .small-card-header {
   font-size: 1rem;
   font-weight: 700;
-  padding: 30px;
   top: -20px;
+  padding-left: 38px;
+  color: rgb(0, 0, 0);
 }
 
 /* footer style start*/
