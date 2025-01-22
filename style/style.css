@@ -219,12 +219,30 @@
   color: white;
 }
 
+/* background style section*/
+
+.background {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  background: url("../assets/bg.png"),
+    linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+}
+
+/* marquee tag*/
+.marq {
+  margin-top: 50px;
+}
+.munim {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+
 /*section 2 style start*/
 .section2 {
   max-width: 1440px;
   margin: 0 auto;
-  background: url("../assets/bg.png"),
-    linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
 }
 
 .main-img-card {
@@ -232,6 +250,7 @@
   height: 630px;
   border-radius: 16px;
   background: rgb(255, 255, 255);
+  margin-left: 140px;
 }
 .main-img-card img {
   border-radius: 16px 16px 0px 0px;
@@ -246,14 +265,13 @@
   gap: 20px;
   justify-content: center;
   align-items: center;
+  margin-bottom: 100px;
 }
 .small-img-card {
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  gap: 20px; */
   width: 290.69px;
   height: 301.61px;
   display: inline-block;
+  margin: 19px;
   border-radius: 16px;
   background: rgb(255, 255, 255);
 }
@@ -277,7 +295,6 @@ footer {
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
-  margin-top: 60px;
 }
 .footer-first-div {
   display: flex;
@@ -336,6 +353,11 @@ footer {
 .footer-last-div {
   display: flex;
   gap: 10px;
+}
+
+.footer-last-div a:hover {
+  transform: scale(1.15);
+  transition: 0.5s;
 }
 
 /* responsive media query*/
@@ -418,16 +440,38 @@ footer {
     font-size: 1rem;
   }
 
+  /* section 2 responsive style start*/
+
+  .main-img-card {
+    display: none;
+  }
+  .other-img-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .small-img-card {
+  }
+
+  /* background image */
+
+  .background {
+    background: linear-gradient(
+      0deg,
+      rgba(254, 163, 1, 0.3),
+      rgba(255, 255, 255, 0.3) 100%
+    );
+  }
+
   /*footer section responsive*/
 
   footer {
-    width: 390px;
+    width: 448px;
     flex-direction: column;
     align-items: flex-start;
     padding: 30px;
     height: 750px;
     margin: 0 auto;
-    margin-top: 40px;
   }
 
   .footer-second {
