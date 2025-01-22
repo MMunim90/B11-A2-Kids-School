@@ -89,16 +89,16 @@
   font-weight: 500;
 }
 #other-card-btn2 {
-    width: 179.44px;
-    height: 38.35px;
-    position: absolute;
-    margin-left: 35px;
-    margin-top: 160px;
-    border-radius: 48px;
-    background: rgb(93, 88, 240);;
-    font-size: 1rem;
-    font-weight: 500;
-  }
+  width: 179.44px;
+  height: 38.35px;
+  position: absolute;
+  margin-left: 35px;
+  margin-top: 160px;
+  border-radius: 48px;
+  background: rgb(93, 88, 240);
+  font-size: 1rem;
+  font-weight: 500;
+}
 /* header styles */
 
 /*navbar styles*/
@@ -429,7 +429,7 @@ footer {
     font-size: 2rem;
   }
   .banner-description {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: 500;
   }
 
@@ -481,13 +481,59 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
+    margin-right: 18px;
+    margin-bottom: 20px;
+  }
+  .main-container {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
   }
   .small-img-card {
+    margin: 0px;
+    width: 173.27px;
+    height: 179.59px;
+  }
+  .small-img-card img {
+    width: 173.27px;
+  }
+  .small-card-header {
+    font-size: 0.6rem;
+    font-weight: 700;
+    top: -20px;
+    padding-left: 28px;
+    color: rgb(0, 0, 0);
   }
 
+  #other-card-btn {
+    width: 103.91px;
+    height: 22.83px;
+    position: absolute;
+    margin-left: 22px;
+    margin-top: 95px;
+    border-radius: 48px;
+    background: rgb(149, 178, 38);
+    font-size: 0.5rem;
+    font-weight: 500;
+    padding: 7.415px;
+  }
+  #other-card-btn2 {
+    width: 103.91px;
+    height: 22.83px;
+    position: absolute;
+    margin-left: 22px;
+    margin-top: 95px;
+    border-radius: 48px;
+    background: rgb(93, 88, 240);
+    font-size: 0.5rem;
+    font-weight: 500;
+    padding: 7.415px;
+  }
   /* background image */
 
   .background {
+    width: 390px;
+    margin: 0 auto;
     background: linear-gradient(
       0deg,
       rgba(254, 163, 1, 0.3),
@@ -498,7 +544,7 @@ footer {
   /*footer section responsive*/
 
   footer {
-    width: 448px;
+    width: 330px;
     flex-direction: column;
     align-items: flex-start;
     padding: 30px;
@@ -508,7 +554,7 @@ footer {
 
   .footer-second {
     margin-top: -80px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   .footer-first p {
