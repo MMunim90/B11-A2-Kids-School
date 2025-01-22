@@ -392,6 +392,10 @@ footer {
   transition: 0.5s;
 }
 
+.footer-a:hover{
+  color: purple;
+}
+
 /* responsive media query*/
 @media screen and (max-width: 576px) {
   .navbar {
